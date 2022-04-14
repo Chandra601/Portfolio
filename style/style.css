@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+/* navigation */
+nav{
+    background: #222831;
+    width: 20%;
+    height: 100vh;
+    padding: 2rem;
+    position: fixed;
+}
+
+li {
+    list-style-type: none;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* end navigation */
+.container{
+    position: absolute;
+    left: 20%;
+    background: #ebd5d5;
+    min-width: 80%;
+    height: 100vh;
+    
+}
+
+.container .image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 2% 39%;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: Calibri;
+}
+
+.container .about-detail p{
+    font-size: 2rem;
+    margin: 0 2rem;
+    word-wrap: break-word;
+}
+
+span{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+/* form */
+
+form{
+    height: 100vh;
+    width: 90vh;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form table{
+    font-size: 2rem;
+}
+
+.name-table{
+    display: inline-block;
+}
+
+.form-detail{
+    display: inline-block;
+}
+form table input,textarea{
+    width: 50vh;
+    border: none;
+    outline:auto;
+    font-size: 1rem;
+    margin-left: 2px;
+    height: 5vh;
+}
+
+form table input:focus,textarea:focus{
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    width: 60vh;
+}
+
+input[type='submit']{
+    background: blue;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+/* slide container */
+
+
+.container .special-heading{
+    text-decoration-line: underline;
+}
+.slidecontainer {
+    position: absolute;
+    left: 30%;
+    min-width: 50%;
+    padding: 1rem;
+    font-size: 3rem;
+    height: 90vh;
+}
+
+.slidecontainer input{
+    width: 50%;
+}
+
+/* experience */
+.container .main-container {
+    margin: 5% 25%; 
+    height: 80vh;
+    width: 100vh;
+}
+
+.display-skill{
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+}
+
+.display-skill p{
+    margin: 2px 0;
+    word-break: break-all;
+}
+
+/* education */
+.container .education-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container .education-detail h2{
+    font-size: 4rem;
+}
+.container .education-detail i{
+    font-size: 6rem;
+    color: purple;
+    margin-right: 25px;
+    display: inline;
+}
+
+.container .education-detail p{
+    font-size: 2rem;
+}
+
+/* finished desktop */
+
+@media only screen and (max-width:900px){
+    body{
+        background-color: grey;
+    }
+
+    /* navigation container */
+    nav{
+        background: #222831;
+        width: 100vh;
+        height: 5vh;
+        z-index: 100;
+        position: fixed;
+    }
+    nav ul{
+        display: flex;
+    }
+    
+    li {
+        list-style-type: none;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding:0 3.5rem;
+    }
+    
+    ul li a{
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        position: absolute;
+        top: 0px;
+    }
+    /* container */
+    .container{
+        background: grey;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .image{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 10% 25%;
+    }
+
+    .container h1{
+        text-align: center;
+        font-size: 3rem;
+        font-family: Calibri;
+    }
+    .container .about-detail{
+        width: 80vh;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .container .about-detail p{
+        font-size: 2rem;
+        margin: 0 1rem;
+        word-wrap: break-word;
+    }    
+    
+    span{
+        color: green;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    /* education */
+    .container .education-detail{
+        height: 100vh;
+        width: 100vh;
+        margin: 0 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .education-detail h2{
+        font-size: 3rem;
+    }
+    .container .education-detail i{
+        font-size: 4rem;
+        color: purple;
+    }
+
+    .container .education-detail p{
+        font-size: 1.4rem;
+        word-wrap: break-word;
+    }
+
+    /* slide container */
+
+
+    .container .special-heading{
+        text-decoration-line: underline;
+        position: absolute;
+        top: 10%;
+        left: 40%;
+    }
+    .slidecontainer {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        min-width: 50%;
+        padding: 1rem;
+        font-size: 2rem;
+        height: 80vh;
+    }
+
+    .slidecontainer input{
+        width: 50%;
+    }
+
+    /* experience */
+    .container .main-container {
+        margin: 5% 0; 
+        height: 80vh;
+        width: 100vh;
+    }
+
+    .display-skill{
+        width: 80%;
+        height: 100%;
+        padding: 3rem;
+        font-size: 2rem;
+    }
+
+    .display-skill p{
+        margin: 2px 0;
+        word-break: break-all;
+    }
+}
